@@ -30,7 +30,7 @@ int main()
       break;
 
      default:
-     cout << "oshibka";
+      cout << "oshibka";
    }
 
 }
