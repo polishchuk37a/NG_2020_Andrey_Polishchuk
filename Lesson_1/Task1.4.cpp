@@ -28,8 +28,9 @@ int main()
      case 4:
      cout << a / b;
      break;
+
      default:
-        cout << "oshibka";
+     cout << "oshibka";
    }
 
 }
