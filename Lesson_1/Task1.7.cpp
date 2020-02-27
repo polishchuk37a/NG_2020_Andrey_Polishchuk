@@ -5,18 +5,18 @@ using namespace std;
 int main()
 {
     int a;
-    cout << "vvedite zarplaty: ";
+    cout << "Enter your salary: ";
     cin >> a;
     if (a > 999999){
-        cout << "ti millioner";
+        cout << "You are millioner";
     }
-    if (a > 1000){
-        if (a < 1000000){
-            cout << "horosho";
-        }
+    if (a < 1000000){
+            if (a > 1000){
+        cout << "Okey";
+            }
     }
-    if (a < 1001){
-        cout << "rabotai bolshe";
+    if (a < 999){
+        cout << "Work more";
     }
     cout << endl << "no ti molodec";
 }
