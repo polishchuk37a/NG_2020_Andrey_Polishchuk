@@ -9,7 +9,7 @@ int main()
    cin >> a;
    cout << "Vvedite 2 chislo: ";
    cin >> b;
-   cout << "Vvedite 3 chislo: ";
+   cout << "Vvedite chislo dlya vibora deystviya (1+,2-,3*,4/): ";
    cin >> c;
    switch(c)
    {

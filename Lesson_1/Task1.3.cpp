@@ -15,7 +15,7 @@ int main()
        cout << a-c;
     }
     if(a > c and c > b and a > b){
-       cout<<a-b;
+       cout << a-b;
     }
     if(b > c and c > a and b > a){
        cout << b-a;
