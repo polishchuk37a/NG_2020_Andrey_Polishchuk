@@ -8,6 +8,10 @@ int main()
     cout << "Hello! How many nambers do You want to see? ";
     cin >> a;
     for (int i = 0; i <= a; i++){
-        cout << i << " ";
+        cout << i;
+        while (a != i){
+            cout << ",";
+            break;
+        }
     }
 }

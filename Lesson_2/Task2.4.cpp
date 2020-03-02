@@ -41,6 +41,9 @@ int main()
         cout << endl;
        }
        break;
+     default:
+         cout << "Error";
+
    }
 }
 
