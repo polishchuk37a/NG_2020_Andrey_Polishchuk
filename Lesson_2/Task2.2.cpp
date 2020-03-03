@@ -9,9 +9,8 @@ int main()
     cin >> a;
     for (int i = 0; i <= a; i++){
         cout << i;
-        while (a != i){
-            cout << ",";
-            break;
+        if(i != a){
+           cout << ",";
         }
     }
 }

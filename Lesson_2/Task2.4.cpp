@@ -42,7 +42,7 @@ int main()
        }
        break;
      default:
-         cout << "Error";
+         cout << "You wrote an incorrect variable, please write word a, b or c";
 
    }
 }
