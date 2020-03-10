@@ -17,9 +17,10 @@ int main()
     for(int arraychek = 0; arraychek < 10; arraychek++){
         if(your_school == school[arraychek]){
             else_changer = 1;
-                cout << "I know this school!";
-            break;
         }
+    }
+    if (else_changer == 1){
+        cout << "I know this school!";
     }
     if (else_changer == 0){
         cout << "I don't know this school!";
