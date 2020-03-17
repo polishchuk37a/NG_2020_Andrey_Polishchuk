@@ -4,40 +4,33 @@ using namespace std;
 
 int main()
 {
-   int stars[20],maxvalue = 0, steps = 0, i = 0, n = 0, m = 0;
-    while (i < 20)
+   int stars[20], maxvalue = 0, steps = 0, iterations = 0, space = 0, star = 0;
+    while (iterations < 20)
     {
-        cout << "Enter the " << i + 1 << " line of stars: ";
-        cin >> stars[i];
-        if (stars[i] == 0)
-        {
+        cout << "Enter the " << iterations + 1 << " line of stars: ";
+        cin >> stars[iterations];
+        if (stars[iterations] == 0){
             break;
         }
-        steps = i + 1;
-        i++;
+        steps = iterations + 1;
+        iterations++;
     }
-    for (i = 0; i < steps; i++)
-    {
-        if (stars[i] > maxvalue)
-        {
-            maxvalue = stars[i];
+    for (iterations = 0; iterations < steps; iterations++){
+        if (stars[iterations] > maxvalue){
+            maxvalue = stars[iterations];
         }
     }
-    for (i = 0; i < steps; i++)
-    {
-        while (m < stars[i])
-        {
-            while(n < (maxvalue - stars[i]) / 2)
-            {
+    for (iterations = 0; iterations < steps; iterations++){
+        while (star < stars[iterations]){
+            while(space < (maxvalue - stars[iterations]) / 2){
                 cout << " ";
-                n++;
+                space++;
             }
             cout << "*";
-            m++;
+            star++;
         }
-      n = 0;
-      m = 0;
+      space = 0;
+      star = 0;
       cout << endl;
     }
-
 }

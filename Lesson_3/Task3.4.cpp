@@ -4,32 +4,25 @@ using namespace std;
 
 int main()
 {
-    int a[5], counter = 0, row = 0, maximum = 0;
-    for (int i = 0; i < 5; i++)
-    {
+    int stars[5], counter = 0, row = 0, maximum = 0;
+    for (int iterations = 0; iterations < 5; iterations++){
         cout << "Enter how much stars do you want to see in columns: ";
-        cin >> a[i];
+        cin >> stars[iterations];
     }
-    while (counter < 5)
-    {
-        if (maximum < a[counter])
-        {
-            maximum = a[counter];
+    while (counter < 5){
+        if (maximum < stars[counter]){
+            maximum = stars[counter];
         }
         counter++;
     }
-    counter=0;
-    while (counter < maximum)
-    {
+    counter = 0;
+    while (counter < maximum){
         row = 0;
-        while (row < 5)
-        {
-            if(counter < a[row])
-            {
+        while (row < 5){
+            if(counter < stars[row]){
                 cout << "*";
             }
-            else
-            {
+            else{
                 cout<<" ";
             }
             row++;
