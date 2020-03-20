@@ -12,19 +12,19 @@ int main()
    }
    cout << endl;
    while(true){
-        cout << "Enter the number of card to put money: ";
-        cin >> number;
-        cout << "How much do you want to put? ";
-        cin >> money;
-        cards[number - 1] = cards[number - 1] + money;
+    cout << "Enter the number of card to put money: ";
+    cin >> number;
+    cout << "How much do you want to put? ";
+    cin >> money;
+    cards[number - 1] = cards[number - 1] + money;
         for (int b = 0; b < 10; b++){
             cout << cards[b] << " ";
         }
         cout << endl;
         sum = 0;
-        for (int a = 0; a < 10; a++){
-            sum += cards[a];
-        }
+            for (int a = 0; a < 10; a++){
+                sum += cards[a];
+            }
     cout << "Your sum on all cards: " << sum << endl;
   }
 }
