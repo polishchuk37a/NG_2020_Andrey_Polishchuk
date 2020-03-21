@@ -21,13 +21,13 @@ int main()
         }
     }
     for (iterations = 0; iterations < steps; iterations++){
-        while (star < stars[iterations]){
-            while(space < (maxvalue - stars[iterations]) / 2){
+        while(space < (maxvalue - stars[iterations]) / 2){
                 cout << " ";
                 space++;
-            }
-            cout << "*";
-            star++;
+        }
+        while (star < stars[iterations]){
+                cout << "*";
+                star++;
         }
       space = 0;
       star = 0;
