@@ -10,14 +10,13 @@ int main()
    cout << "Write a sentance pls: ";
    cin.getline(strng, 100);
    while(strng[iterations] != 0){
-    if (strng[iterations] == ' ')
-        space = true;
-        else
-        if (space){
+        if (strng[iterations] == ' ')
+            space = true;
+        else if (space){
             space = false;
             words++;
         }
-    iterations++;
+        iterations++;
    }
    cout << "The amount of words: " << words;
 }
