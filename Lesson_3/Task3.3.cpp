@@ -29,8 +29,8 @@ int main()
                 cout << "*";
                 star++;
         }
-      space = 0;
-      star = 0;
-      cout << endl;
+        space = 0;
+        star = 0;
+        cout << endl;
     }
 }
