@@ -6,9 +6,9 @@ int main()
 {
    int cards[10], number, money, sum = 0;
    cout << "Your balance on 10 cards" << endl;
-   for (int i = 0; i < 10; i++){
-       cards[i] = 0;
-       cout << cards[i] << " ";
+   for (int show_balance = 0; show_balance < 10; show_balance++){
+       cards[show_balance] = 0;
+       cout << cards[show_balance] << " ";
    }
    cout << endl;
    while(true){
@@ -17,13 +17,13 @@ int main()
         cout << "How much do you want to put? ";
         cin >> money;
         cards[number - 1] = cards[number - 1] + money;
-        for (int b = 0; b < 10; b++){
-            cout << cards[b] << " ";
+        for (int show_new_balance = 0; show_new_balance < 10; show_new_balance++){
+            cout << cards[show_new_balance] << " ";
         }
         cout << endl;
         sum = 0;
-        for (int a = 0; a < 10; a++){
-            sum += cards[a];
+        for (int add_balance_on_cards = 0; add_balance_on_cards < 10; add_balance_on_cards++){
+            sum += cards[add_balance_on_cards];
         }
         cout << "Your sum on all cards: " << sum << endl;
   }
