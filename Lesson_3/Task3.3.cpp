@@ -14,10 +14,10 @@ int main()
         }
         steps = iterations + 1;
         iterations++;
-    }
-    for (iterations = 0; iterations < steps; iterations++){
-        if (stars[iterations] > maxvalue){
-            maxvalue = stars[iterations];
+        for (iterations = 0; iterations < steps; iterations++){
+            if (stars[iterations] > maxvalue){
+                maxvalue = stars[iterations];
+            }
         }
     }
     for (iterations = 0; iterations < steps; iterations++){
