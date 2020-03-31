@@ -18,13 +18,13 @@ void GetSum(int num1,int num2){
     cout << "The sum of those numbers: " << num1 + num2;
 }
 int GetRes(int num1,int num2){
-    cout << "The result of those numbers: " << num1 - num2;
+    cout << "The result of those numbers: " << num2 - num1;
 }
 void GetMul(int num1,int num2){
     cout << "The multiply of those numbers: " << num1 * num2;
 }
 void GetDiv(int num1,int num2){
-    cout << "The div of those numbers: " << num1 / num2;
+    cout << "The div of those numbers: " << num2 / num1;
 }
 void GetSqrt(int num1){
     cout << "The sqrt of number: " << sqrt(num1);
@@ -45,39 +45,27 @@ void GetPow(int num1){
 int main()
 {
     int act = 0;
-    int value1;
-    int value2;
     cout << "Enter the act <1: sum, 2: result, 3: multiply, 4: div, 5: sqrt, 6: power>: ";
     cin >> act;
     switch(act)
     {
         case 1:
-            value1 = Enter_number();
-            value2 = Enter_the_second_number();
-            GetSum(value1,value2);
+            GetSum(Enter_the_second_number(),Enter_number());
             break;
         case 2:
-            value1 = Enter_number();
-            value2 = Enter_the_second_number();
-            GetRes(value1,value2);
+            GetRes(Enter_the_second_number(),Enter_number());
             break;
         case 3:
-            value1 = Enter_number();
-            value2 = Enter_the_second_number();
-            GetMul(value1,value2);
+            GetMul(Enter_the_second_number(),Enter_number());
             break;
         case 4:
-            value1 = Enter_number();
-            value2 = Enter_the_second_number();
-            GetDiv(value1,value2);
+            GetDiv(Enter_the_second_number(),Enter_number());
             break;
         case 5:
-            value1 = Enter_number();
-            GetSqrt(value1);
+            GetSqrt(Enter_number());
             break;
         case 6:
-            value1 = Enter_number();
-            GetPow(value1);
+            GetPow(Enter_number());
             break;
         default:
             cout << "Error";
