@@ -41,13 +41,16 @@ void GetPow(int num1){
     }
     cout << "The power is: " << result;
 }
-
-int main()
-{
+int GetAct(){
     int act = 0;
     cout << "Enter the act <1: sum, 2: result, 3: multiply, 4: div, 5: sqrt, 6: power>: ";
     cin >> act;
-    switch(act)
+    return act;
+}
+
+int main()
+{
+    switch(GetAct())
     {
         case 1:
             GetSum(Enter_the_second_number(),Enter_number());
