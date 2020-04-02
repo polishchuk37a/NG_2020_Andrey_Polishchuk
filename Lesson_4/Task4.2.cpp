@@ -4,45 +4,31 @@ using namespace std;
 
 int main()
 {
-    char sent[100];
-    int i=0, n=0;
-    int dif=0;
-    int largest=0;
-
-    cout << "Input please a sentence: ";
-    cin.getline(sent,100);
-
-    while (sent[i]!=NULL)
-    {
-        if ((sent[i]>='a' && sent[i]<='z') || (sent[i]>='A' && sent[i]<='Z'))
-            n++;
-        else {
-            if (n > largest)
-            {
-                largest = n;
-                dif = i-largest;
+    char str[100];
+    int length = 0, maxlen = 0, word, index = 0;
+    cout << "Enter the sentence: ";
+    cin.getline(str, 100);
+    while (str[index] != NULL){
+        if (str[index] >= 'a' && str[index] <= 'z'){
+            length++;
+        }else {
+            if (length > maxlen){
+                maxlen = length;
+                word = index - maxlen;
             }
-            n = 0;
+            length = 0;
         }
-
-        if (sent[i+1]==0)
-        {
-            if (n > largest && sent[i+1]==0)
-            {
-                largest = n;
-                dif = i-largest;
+        if(str[index + 1] == 0){
+            if (length > maxlen){
+                maxlen = length;
+                word = index - maxlen + 1;
             }
-            n=0;
         }
-        i++;
+        index++;
     }
-    cout << endl << "The largest word is: ";
-
-    for (i=0;i <= largest;i++)
-    {
-        cout << sent[dif];
-        dif++;
+    cout << "The largest word in this sentence is: ";
+    for(int i = 0; i < maxlen; i++){
+        cout << str[word];
+        word++;
     }
-
-    cout << endl;
 }
